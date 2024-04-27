@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <!-- 
+   增加这句后，可以看到浏览器的DevTools面板的模拟移动设备状态的变化
+  -->
+  <link rel="stylesheet" href="myCSS.css" > 
+  
+  <title>Welcome to myCTApp</title>
+ </head> 
+ <body>
+  <header>
+	<p id="lessonName" >
+     《计算思维和语言学习》
+    </p> 
+  <nav>
+    <button>向前</button>
+    <button>向后</button>
+  </nav>
+  </header>
+
+   <main>
+    软件内容区域
+	  
+   </main>
+
+  <footer> 
+   	<p id="footerInfo">
+	 柴葆明 江西科技师范大学 2025
+	</p>
+  </footer> 
+  
+ <!-- <script src="myJs.js" > 
+ </script> -->
+ <script>
+  var UI={};
+    UI.appWidth=window.innerWidth;
+    UI.appHeight=window.innerHeight;
+    let baseFont=UI.appWidth/20;
+    //通过修改了body对象的字体大小，这个属性能遗传给子子孙孙
+ 
+    document.body.style.fontSize = baseFont +"px";
+ </script>
+ </body>
+</html>
