@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <meta name="viewport" content="width=device-width , initial-scale=1, user-scalable=no">
   <!-- 
    增加这句后，可以看到浏览器的DevTools面板的模拟移动设备状态的变化
   -->
@@ -35,13 +35,12 @@
 	 柴葆明 江西科技师范大学 2025
 
   </footer> 
-  <div aid>
-    用户键盘响应区域
-  </div>
+
  <!-- <script src="myJs.js" > 
  </script> -->
  <div id="aid">
   <p>用户键盘响应区</p>
+  <p id="keyboard"></p>
 
 </div>
 <script>
@@ -87,7 +86,11 @@ $("bookface").addEventListener("mousemove",function(ev){
   console.log("鼠标正在移动，坐标为："+"("+x+","+y+")");
   $("bookface").textContent= "鼠标正在移动，坐标为："+"("+x+","+y+")";
 });
-
+$("body").addEventListener("keypress",function(ev){
+    let k = ev.key;
+    let c = ev.keyCode;
+    $("keyboard").textContent = "您的按键 ：" + k + " ，"+ "字符编码 ：" + c;
+});
 
 function $(ele){
       if (typeof ele !== 'string'){

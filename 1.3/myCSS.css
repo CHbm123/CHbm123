@@ -3,17 +3,17 @@
   text-align: center;
 }
 header{
-  border: 3px solid green;
+  border: 3px solid rgb(0, 204, 255);
   height: 10%;
   font-size: 1em;
 
 }
 nav{
-  border: 3px solid green;
+  border: 3px solid rgb(0, 204, 255);
   height: 10%;
 }
 main{
-  border: 3px solid green;
+  border: 3px solid rgb(0, 204, 255);
   height: 70%;
   font-size: 0.8em;  
   position: relative;
@@ -26,7 +26,7 @@ main{
 }
 
 footer{
-  border: 3px solid green;
+  border: 3px solid rgb(0, 204, 255);
   height:10%;
   font-size: 0.7em;
 } 
@@ -35,7 +35,7 @@ body{
 }
 #aid{
   position: absolute;
-  border: 3px solid blue;
+  border: 3px solid rgb(0, 204, 255);
   top:0px;
   left:600px;
 }
